@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from __future__ import print_function
 
 import json
@@ -13,7 +15,7 @@ with open(args.params[0]) as f:
 
 print('generating "{}"'.format(data['name']))
 
-generated_params = {name: random.choice(values) for name, values in data['parameters'].items()}
+generated_params = {name: random.choice(values) for name, values in data['parameters'].items() if len(values) > 0}
 name_lengths = [len(name) for name in generated_params.keys()]
 max_name_len = max(name_lengths)
 
