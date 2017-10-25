@@ -1,6 +1,7 @@
 # Table Generator
 This is a simple generic content-generator written in Python, meant to model D&D style 
-encounter/event tables. Content goes in a json file (e.g. `heist.json`), and the
+encounter/event tables. Content goes in a json file (e.g. 
+[`heist.json`](https://gist.github.com/mammothbane/cafb7d6c9f61d824c4ce2f7fd079325b)), and the
 program picks random values out of that file.
 
 The json file is quite simple. At its most basic, it looks like this:
